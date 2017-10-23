@@ -1,0 +1,1 @@
+insert into user (username,access,is_active) VALUE {"dev",now(),true}
