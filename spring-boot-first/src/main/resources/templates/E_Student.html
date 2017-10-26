@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>编辑学生信息</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+    <form action="/student/submit" method="post">
+
+        ID：<input type="text" name="id" th:value="${student.id}" value="2"/>
+        姓名：<input type="text" name="name" th:value="${student.name}" value="smith"/>
+        年龄：<input type="text" name="age" th:value="${student.age}" value="23"/>
+        生日：<input type="text" name="birth" th:value="${student.birth}" value=""/>
+        <input type="submit" value="提交"/>
+    </form>
+</body>
+</html>

@@ -40,7 +40,7 @@ public class MvcConfig extends WebMvcConfigurationSupport {
         resolver.setViewClass(JstlView.class);
         resolver.setPrefix("/");
         resolver.setSuffix("");
-        resolver.setOrder(1);
+        resolver.setOrder(2);
         resolver.setViewNames("*.jsp");
         return resolver;
     }
