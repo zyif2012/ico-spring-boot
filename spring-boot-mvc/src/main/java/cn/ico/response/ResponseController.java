@@ -1,4 +1,4 @@
-package cn.ico.redirect;
+package cn.ico.response;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
