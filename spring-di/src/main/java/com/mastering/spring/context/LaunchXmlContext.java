@@ -13,12 +13,19 @@ public class LaunchXmlContext {
 
   public static Logger logger = Logger.getLogger(LaunchJavaContext.class);
 
-  public static void main(String[] args) {
+  public static void abc(String[] args) {
     ApplicationContext context = new ClassPathXmlApplicationContext(
         "BusinessApplicationContext.xml");
 
     BusinessService service = context.getBean(BusinessService.class);
     logger.debug(service.calculateSum(DUMMY_USER));
   }
+
+  public static void main(String[] args) {
+    ApplicationContext context = new ClassPathXmlApplicationContext("BusinessApplicationContext.xml");
+    BusinessService service = context.getBean(BusinessService.class);
+    logger.debug(service.calculateSum(DUMMY_USER));
+  }
+
 
 }

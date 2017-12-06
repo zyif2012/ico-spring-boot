@@ -21,8 +21,4 @@ public class BusinessServiceImpl implements BusinessService {
     return sum;
   }
 
-  public void setDataService(DataService dataService) {
-    this.dataService = dataService;
-  }
-
 }

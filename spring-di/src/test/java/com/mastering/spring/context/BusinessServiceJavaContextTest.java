@@ -12,7 +12,7 @@ import com.mastering.spring.beans.User;
 import com.mastering.spring.business.BusinessService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = { "/BusinessApplicationContext.xml" })
+@ContextConfiguration(locations = {"/BusinessApplicationContext.xml"})
 public class BusinessServiceJavaContextTest {
   private static final User DUMMY_USER = new User("dummy");
 
@@ -21,6 +21,13 @@ public class BusinessServiceJavaContextTest {
 
   @Test
   public void testCalculateSum() {
+    long sum = service.calculateSum(DUMMY_USER);
+    assertEquals(30, sum);
+  }
+
+
+  @Test
+  public void testService(){
     long sum = service.calculateSum(DUMMY_USER);
     assertEquals(30, sum);
   }
