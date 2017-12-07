@@ -30,7 +30,7 @@ public class UserValidationControllerUnitTest {
 						.andExpect(status().isOk())
 						.andExpect(model().errorCount(4))
 						.andExpect(
-						model().attributeHasFieldErrorCode("user", "name",
+						model().attributeHasFieldErrorCode("user", "userId",
 								"Size"));
 	}
 }
