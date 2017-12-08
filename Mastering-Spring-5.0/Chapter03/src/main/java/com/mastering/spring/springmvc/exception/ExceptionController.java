@@ -19,6 +19,7 @@ public class ExceptionController {
 				+ " Threw an Exception", ex);
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("exception", ex);
+		String message = ex.getMessage();
 		mav.addObject("url", request.getRequestURL());
 		mav.setViewName("common/spring-mvc-error");
 		return mav;
